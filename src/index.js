@@ -1,4 +1,3 @@
-import FormContainer from "./js/components/container/FormContainer";
 import './locales/en/translations.json';
 import './locales/es/translations.json';
 import React from 'react';

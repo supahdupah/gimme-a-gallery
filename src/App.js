@@ -1,17 +1,15 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
 import { I18n, Trans } from 'react-i18next';
-// import Menu from './Header/Menu';
-// import Drawings from './Gallery/Drawings';
-// import Ilustrations from './Gallery/Ilustrations';
-// import Paintings from './Gallery/Paintings';
-// import Home from './Gallery/Home';
-// import MenuAim from './Header/MenuAim';
+import Drawings from './js/Gallery/Drawings';
+import Ilustrations from './js/Gallery/Ilustrations';
+import Paintings from './js/Gallery/Paintings';
+import Home from './js/Gallery/Home';
 import {
   Route,
   Link
 } from 'react-router-dom'
-import Menu from './js/components/menu/Menu';
-
+import MenuContainer from './js/components/container/MenuContainer';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -20,36 +18,20 @@ class App extends Component {
         {
           (t, { i18n }) => (
             <div className="App">
-              {/* <div className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h2>{t('title')}</h2>
-
-              </div> */}
+              <h4 class="title">Submenu Appear below</h4>
+              <button onClick={() => i18n.changeLanguage('es')}>de</button>
+              <button onClick={() => i18n.changeLanguage('en')}>en</button>
               <div className="App-intro">
-
-                <Trans i18nKey="description.part1">
-                  To get started, edit <code>src/App.js</code> and save to reload.
-                </Trans>
-                <Menu>
-                </Menu>
+                <MenuContainer menuData={t('menuData', { returnObjects: true })}>
+                </MenuContainer>
               </div>
-              <div>{t('description.part2')}</div>
 
-              <div class="demo" id="demo3">
-              
-                <h4 class="title">Submenu Appear below</h4>
-                  <button onClick={() => i18n.changeLanguage('es')}>de</button>
-                  <button onClick={() => i18n.changeLanguage('en')}>en</button>
-                <div class="demo-container">
-                  {/* <Menu menuData={t('menuData', { returnObjects: true })} submenuDirection="below" /> */}
-                </div>
-              </div>
-              {/* <div class="container">
+              <div class="container">
                 <Route exact path="/" component={Home} />
                 <Route path="/ilustrations" component={Ilustrations} />
                 <Route path="/paintings" component={Paintings} />
                 <Route path="/drawings" component={Drawings} />
-              </div> */}
+              </div>
             </div>
           )
         }

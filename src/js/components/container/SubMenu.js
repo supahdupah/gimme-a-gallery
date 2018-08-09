@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { target } from 'react-aim';
-import Item from './Item';
+import SubMenuItem from '../presentational/SubMenuItem'
 
 const style = {
   position: 'absolute',
@@ -25,24 +25,19 @@ const style = {
   }
 )
 class Submenu extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { highlight: null, aiming: false }
   }
 
   render() {
-    const componentStyle = { ...style };
-    if (this.state.aiming) {
-      componentStyle.boxShadow = 'inset 0 0 0 1px red';
-    }
-
     return (
-      <ul style={componentStyle}>
-        <Item name="item 1"/>
-        <Item name="item 2"/>
-        <Item name="item 3"/>
-        <Item name="item 4"/>
-        <Item name="item 5"/>
+      <ul >
+        {this.props.singleMenuData.subMenu.map(function (subMenu, index) {
+          return (
+            <SubMenuItem path={subMenu.path} name={subMenu.name} key={index}></SubMenuItem>
+          );
+        })}
       </ul>
     );
   }

@@ -46,6 +46,8 @@
     "i18next-browser-languagedetector": "^2.2.3",
     "i18next-xhr-backend": "^1.5.1",
     "react-aim": "^0.2.2",
-    "react-i18next": "^7.10.1"
+    "react-i18next": "^7.10.1",
+    "react-images": "^0.5.19",
+    "react-photo-gallery": "^6.1.2"
   }
 }

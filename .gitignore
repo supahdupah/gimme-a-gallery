@@ -1,6 +1,7 @@
 # dependencies
 /node_modules
 # misc
+.vs
 .DS_Store
 .env.local
 .env.development.local
