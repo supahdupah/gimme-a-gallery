@@ -1,0 +1,55 @@
+{
+    "title": "Welcome to preact using react-i18next",
+    "description": {
+      "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+      "part2": "Switch language between english and german using buttons above."
+    },
+    "menuItem0": "Pintura",
+    "menuItem1": "Dibujos",
+    "menuItem2": "Ilustraciones",
+    "menuItem3": "Escultura",
+    "menuItem4": "Juegos",
+    "menuItem5": "Catalogos",
+    "menuItem6": "Prensa",
+    "menuData": [{
+        "name": "Home",
+        "path": "/",
+        "subMenu": ["New File", "Open"]
+      },{
+        "name": "PAINTINGS",
+        "path": "/paintings",
+        "subMenu": ["New File", "Open"]
+      }, {
+        "name": "DRAWINGS",
+        "path": "/drawings",
+        "subMenu": ["Undo Insert Characters", "Repeat Insert Characters"]
+      }, {
+        "name": "Ilustraciones",
+        "path": "/ilustrations",
+        "subMenu": ["Undo Insert Characters", "Repeat Insert Characters"]
+      }, {
+        "name": "ESCULTURA",
+        "path": "/paintings",
+        "subMenu": ["Undo Insert Characters", "Repeat Insert Characters"]
+      }, {
+        "name": "JUEGOS",
+        "path": "/paintings",
+        "subMenu": ["Undo Insert Characters", "Repeat Insert Characters"]
+      }, {
+        "name": "CATALOGOS",
+        "path": "/paintings",
+        "subMenu": ["Undo Insert Characters", "Repeat Insert Characters"]
+      }, {
+        "name": "PRENSA",
+        "path": "/paintings",
+        "subMenu": ["Undo Insert Characters", "Repeat Insert Characters"]
+      }, {
+        "name": "OTROS",
+        "path": "/paintings",
+        "subMenu": ["Undo Insert Characters", "Repeat Insert Characters"]
+      }, {
+        "name": "Contacts",
+        "path": "/paintings",
+        "subMenu": ["Undo Insert Characters", "Repeat Insert Characters"]
+      }]
+}
