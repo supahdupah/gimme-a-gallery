@@ -6,7 +6,7 @@ import MenuItem from '../presentational/MenuItem';
 class MenuContainer extends Component {
     render() {
         return (
-            <div>
+            <div className="topnav">
                 <ul id="menu">
                     {this.props.menuData.map(function (menu, index) {
                         return (

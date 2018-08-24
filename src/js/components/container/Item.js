@@ -39,7 +39,7 @@ class Item extends Component {
     }
 
     return (
-       <li >          
+       <li>          
           <MenuItem name={this.props.name} path={this.props.path} key={this.props.index}>
           </MenuItem>
         {/* {this.props.name} */}

@@ -48,7 +48,7 @@ class Paintings extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="image-container col-12">
         <Gallery photos={photos} onClick={this.openLightbox} />
         <Lightbox images={photos}
           onClose={this.closeLightbox}

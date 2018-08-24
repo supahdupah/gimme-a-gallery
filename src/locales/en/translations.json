@@ -12,42 +12,42 @@
         "path": "/"
       }]
     },{
-      "name": "PAINTINGS",
+      "name": "Paintings",
       "path": "/paintings",
       "subMenu": [{
         "name": "PaintingsSub",
         "path":"/paintings/sub"
       }]
     }, {
-      "name": "DRAWINGS",
+      "name": "Drawings",
       "path": "/drawings",
       "subMenu": [{
         "name": "PaintingsSub",
         "path":"/paintings/sub"
       }]
     }, {
-      "name": "Ilustraciones",
+      "name": "Ilustrations",
       "path": "/ilustrations",
       "subMenu": [{
         "name": "PaintingsSub",
         "path":"/paintings/sub"
       }]
     }, {
-      "name": "ESCULTURA",
+      "name": "Escultura",
       "path": "/paintings",
       "subMenu": [{
         "name": "PaintingsSub",
         "path":"/paintings/sub"
       }]
     }, {
-      "name": "JUEGOS",
+      "name": "Juegos",
       "path": "/paintings",
       "subMenu": [{
         "name": "PaintingsSub",
         "path":"/paintings/sub"
       }]
     }, {
-      "name": "CATALOGOS",
+      "name": "Catalogs",
       "path": "/paintings",
       "subMenu": [{
         "name": "PaintingsSub",

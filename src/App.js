@@ -18,19 +18,25 @@ class App extends Component {
         {
           (t, { i18n }) => (
             <div className="App">
-              <h4 class="title">Submenu Appear below</h4>
-              <button onClick={() => i18n.changeLanguage('es')}>de</button>
-              <button onClick={() => i18n.changeLanguage('en')}>en</button>
-              <div className="App-intro">
-                <MenuContainer menuData={t('menuData', { returnObjects: true })}>
-                </MenuContainer>
+              <div className="header">
+                ALICIA MARCANS
+                  <div className="lang-switcher">
+                    <div className="lang" onClick={() => i18n.changeLanguage('es')}>ES</div>
+                    <div className="divider"></div>
+                    <div className="lang" onClick={() => i18n.changeLanguage('en')}>EN</div>
+                  </div>
               </div>
 
-              <div class="container">
-                <Route exact path="/" component={Home} />
-                <Route path="/ilustrations" component={Ilustrations} />
-                <Route path="/paintings" component={Paintings} />
-                <Route path="/drawings" component={Drawings} />
+              <div>
+                <MenuContainer menuData={t('menuData', { returnObjects: true })}>
+                </MenuContainer>
+
+                <div class="col-12 container">
+                  <Route exact path="/" component={Home} />
+                  <Route path="/ilustrations" component={Ilustrations} />
+                  <Route path="/paintings" component={Paintings} />
+                  <Route path="/drawings" component={Drawings} />
+                </div>
               </div>
             </div>
           )

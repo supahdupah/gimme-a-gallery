@@ -6,7 +6,7 @@
   },
   "menuData": [{
       "name": "HOME",
-      "path": "/a",
+      "path": "/",
       "subMenu": [{
         "name": "PaintingsSub",
         "path":"/paintings/sub"
