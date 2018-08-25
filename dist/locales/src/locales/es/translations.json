@@ -1,0 +1,57 @@
+{
+  "title": "Willkommen zu react und react-i18next",
+  "description": {
+    "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> speicheren und neuladen.",
+    "part2": "Ändere die Sprachen zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+  },
+  "menuData": [{
+      "name": "HOME",
+      "path": "/a",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    },{
+      "name": "PINTURA",
+      "path": "/paintings",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "DIBUJOS",
+      "path": "/painting",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "Ilustraciones",
+      "path": "/ilustrations",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "ESCULTURA",
+      "path": "/paintings",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "JUEGOS",
+      "path": "/paintings",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "CATALOGOS",
+      "path": "/paintings",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }]
+}

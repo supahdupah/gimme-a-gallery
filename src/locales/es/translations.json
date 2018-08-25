@@ -1,0 +1,52 @@
+{
+  "menuData": [{
+      "name": "HOME",
+      "path": "/",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    },{
+      "name": "PINTURA",
+      "path": "/paintings",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "DIBUJOS",
+      "path": "/painting",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "ILUSTRACIONES",
+      "path": "/ilustrations",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "ESCULTURA",
+      "path": "/paintings",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "JUEGOS",
+      "path": "/paintings",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }, {
+      "name": "CATALOGOS",
+      "path": "/paintings",
+      "subMenu": [{
+        "name": "PaintingsSub",
+        "path":"/paintings/sub"
+      }]
+    }]
+}
