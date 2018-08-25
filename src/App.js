@@ -19,25 +19,34 @@ class App extends Component {
           (t, { i18n }) => (
             <div className="App">
               <div className="header">
-                ALICIA MARCANS
-                  <div className="lang-switcher">
-                    <div className="lang" onClick={() => i18n.changeLanguage('es')}>ES</div>
-                    <div className="divider"></div>
-                    <div className="lang" onClick={() => i18n.changeLanguage('en')}>EN</div>
-                  </div>
+                ALICIA MARSANS
+                <div className="socialmedia">
+                  <a href="https://www.instagram.com/alicia_marsans/"><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-facebook"></i></a>           
+                </div>
+                <div className="lang-switcher">
+                  <div className="lang" onClick={() => i18n.changeLanguage('es')}>ES</div>
+                  <div className="divider"></div>
+                  <div className="lang" onClick={() => i18n.changeLanguage('en')}>EN</div>
+                  <div className="divider"></div>
+                  <div className="lang" onClick={() => i18n.changeLanguage('en')}>CAT</div>
+                </div>
               </div>
 
               <div>
                 <MenuContainer menuData={t('menuData', { returnObjects: true })}>
                 </MenuContainer>
 
-                <div class="col-12 container">
-                  <Route exact path="/" component={Home} />
+                <div class="container">
+                  <Route exact path="/" component={Paintings} />
                   <Route path="/ilustrations" component={Ilustrations} />
                   <Route path="/paintings" component={Paintings} />
                   <Route path="/drawings" component={Drawings} />
                 </div>
               </div>
+              <footer class="footer">
+
+              </footer>
             </div>
           )
         }

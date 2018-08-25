@@ -1,25 +1,41 @@
 * {
     box-sizing: border-box;
-    font-family: 'Sarpanch', sans-serif;
-}
-title{
-   
+    /* font-family: 'Karla', sans-serif !important; */
 }
 .header {
-    background-color: #dddddd;
-    text-align: center;
-    font-family: 'Sarpanch', sans-serif !important;
-    font-size: 36pt;
+    background-color: #ffffff;
+    text-align: left;
+    font-family: 'Karla', sans-serif !important;
+    font-size: 30pt;
     color: #000000;
     padding: 10px;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #92929211;
+    color: white;
+    text-align: center;
+}
 .lang-switcher {
-    background-color: #dddddd;
+    background-color: #ffffff;
     color: #000000;
     float: right !important;
 }
 .lang-switcher .lang{
-    font-size: 18pt;
+    font-size: 14pt;
+    cursor: pointer;
+    display: inline;
+}
+.socialmedia{
+    padding-left: 25px;
+    font-size: 16pt;
+    float: right !important;
+}
+.socialmedia a{
     display: inline;
 }
 .divider{
@@ -45,7 +61,7 @@ title{
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
+    border: 0.5px solid rgb(202, 221, 243);
 }
 
 .row::after {
@@ -55,11 +71,12 @@ title{
 }
 
 .image-container {
-
+    padding-top: 18px;
 }
 .topnav {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+    font-family: 'Karla', sans-serif; 
 }
 /*Style for menu links*/
 /* li a {
@@ -80,7 +97,7 @@ title{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .topnav ul {
@@ -99,7 +116,8 @@ title{
 
 /*Hover state for top level links*/
 .topnav ul li:hover a {
-    background: #43ffbd;
+    border-bottom: #c1cef5 0.2pt groove;
+    /* background: #edfbfc; */
 }
 /*Style for dropdown links*/
 .topnav li:hover ul a {
@@ -110,7 +128,7 @@ title{
 }
 /*Hover state for dropdown links*/
 .topnav li:hover ul a:hover {
-    background: #43ffbd;
+    background: #edfbfc;
     color: #fff;
 }
 /*Hide dropdown links until they are needed*/
@@ -153,20 +171,20 @@ title{
 /*Responsive Styles*/
 @media screen and (max-width : 760px){
     /*Make dropdown links appear inline*/
-    ul {
+    /* ul {
         position: static;
         display: none;
-    }
+    } */
     /*Create vertical spacing*/
-    li {
+    /* li {
         margin-bottom: 1px;
-    }
+    } */
     /*Make all menu links full width*/
-    ul li, li a {
+    /* ul li, li a {
         width: 100%;
-    }
+    } */
     /*Display 'show menu' link*/
-    .show-menu {
+    /* .show-menu {
         display:block;
-    }
+    } */
 }
