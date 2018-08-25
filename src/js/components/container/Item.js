@@ -16,6 +16,8 @@ const style = {
 @source(
   {
     mouseEnter: (props, component) => {
+      console.log(component);
+      console.log("mouseEnter");
       component.setState({ over: true });
     },
     mouseLeave: (props, component) => {
@@ -24,8 +26,8 @@ const style = {
   }
 )
 class Item extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = { over: false };
   }
 
@@ -39,12 +41,12 @@ class Item extends Component {
     }
 
     return (
-       <li>          
+       <>          
           <MenuItem name={this.props.name} path={this.props.path} key={this.props.index}>
           </MenuItem>
-        {/* {this.props.name} */}
+         {/* {this.props.name}  */}
          {submenu} 
-      </li>
+      </>
     );
   }
 }

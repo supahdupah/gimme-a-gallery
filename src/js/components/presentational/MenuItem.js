@@ -4,7 +4,10 @@ import {
   } from 'react-router-dom'
 
 const MenuItem = props => (
-    <Link to={props.path}>{props.name}</Link>
+    <li>
+        <Link to={props.path}>{props.name}</Link>
+    </li>
+
     // <li style={style} key={props.index}>
         
     // </li>

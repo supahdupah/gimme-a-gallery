@@ -1,11 +1,6 @@
 {
-  "title": "Welcome to preact using react-i18next",
-  "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
-  },
   "menuData": [{
-      "name": "Home",
+      "name": "HOME",
       "path": "/",
       "subMenu": [{
         "name": "New File",
@@ -26,28 +21,28 @@
         "path":"/paintings/sub"
       }]
     }, {
-      "name": "Ilustraciones",
+      "name": "ILUSTRATIONS",
       "path": "/ilustrations",
       "subMenu": [{
         "name": "PaintingsSub",
         "path":"/paintings/sub"
       }]
     }, {
-      "name": "ESCULTURA",
+      "name": "SCULPTURES",
       "path": "/paintings",
       "subMenu": [{
         "name": "PaintingsSub",
         "path":"/paintings/sub"
       }]
     }, {
-      "name": "JUEGOS",
+      "name": "TOYS",
       "path": "/paintings",
       "subMenu": [{
         "name": "PaintingsSub",
         "path":"/paintings/sub"
       }]
     }, {
-      "name": "CATALOGOS",
+      "name": "CATALOGS",
       "path": "/paintings",
       "subMenu": [{
         "name": "PaintingsSub",

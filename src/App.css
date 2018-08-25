@@ -119,6 +119,9 @@
     border-bottom: #c1cef5 0.2pt groove;
     /* background: #edfbfc; */
 }
+.topnav ul li {
+    height: auto;
+}
 /*Style for dropdown links*/
 .topnav li:hover ul a {
     background: #f3f3f3;

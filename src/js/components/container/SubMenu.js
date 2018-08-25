@@ -17,6 +17,8 @@ const style = {
 @target(
   {
     aimStart: (props, component) => {
+      console.log(component);
+      console.log("mouseEnter");
       component.setState({ aiming: true });
     },
     aimStop: (props, component) => {
@@ -25,8 +27,8 @@ const style = {
   }
 )
 class Submenu extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = { highlight: null, aiming: false }
   }
 
