@@ -33,17 +33,15 @@ class App extends Component {
                 </div>
               </div>
 
-              <div>
                 <MenuContainer menuData={t('menuData', { returnObjects: true })}>
                 </MenuContainer>
 
-                <div class="container">
+              <div class="container">
                   <Route exact path="/" component={Paintings} />
                   <Route path="/ilustrations" component={Ilustrations} />
                   <Route path="/paintings" component={Paintings} />
                   <Route path="/drawings" component={Drawings} />
                 </div>
-              </div>
               <footer class="footer">
 
               </footer>

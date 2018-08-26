@@ -60,7 +60,7 @@
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 15px; 
     border: 0.5px solid rgb(202, 221, 243);
 }
 
@@ -71,6 +71,7 @@
 }
 
 .image-container {
+    z-index: -10;
     padding-top: 18px;
 }
 .topnav {
@@ -78,28 +79,6 @@
     overflow: hidden;
     font-family: 'Karla', sans-serif; 
 }
-/*Style for menu links*/
-/* li a {
-    display:block;
-    min-width:140px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    background: #ffffff;
-    text-decoration: none;
-} */
-.topnav li a {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 13px;
-}
-
 .topnav ul {
     list-style-type: none;
     margin: 0;
@@ -107,52 +86,73 @@
     overflow: hidden;
     background-color: #ffffff;
 } 
-/*Create a horizontal list with spacing*/
-/* li {
-    display:inline-block;
+.topnav li {
     float: left;
-    margin-right: 1px;
-} */
+    display: block;
+    padding: 14px 16px;
+    /* min-width:100px;  */
+    height: 50px;
+    /* text-align: justify; */
+}
+.topnav li ul li {
+    float: left;
+    display: block;
+    padding: 16px 0px;
+    min-width:100px;
+    height: 50px;
+    /* text-justify: distribute; */
+    /* text-align: justify; */
+}
+.topnav ul li:hover ul {
+    display: block; 
+    position: absolute;
+}
+.topnav ul ul {
+    display: none;
+}
+
+.topnav ul li a {
+    color: #000000;
+    background: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+}
+/*Style for dropdown links*/
+.topnav ul li ul li a {
+    background: #ffffff;
+    color: #000000;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+}
 
 /*Hover state for top level links*/
-.topnav ul li:hover a {
+.topnav > ul > li:hover > a {
     border-bottom: #c1cef5 0.2pt groove;
     /* background: #edfbfc; */
 }
-.topnav ul li {
-    height: auto;
+
+/* iki cia */
+/*Hover state for dropdown links*/
+.topnav > ul > li > ul > li:hover a{
+    border-bottom: #c1cef5 0.2pt groove;
 }
-/*Style for dropdown links*/
-.topnav li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
+
+/*Make dropdown links vertical*/
+/* .topnav ul li ul li {
     height: 40px;
     line-height: 40px;
-}
-/*Hover state for dropdown links*/
-.topnav li:hover ul a:hover {
-    background: #edfbfc;
-    color: #fff;
-}
-/*Hide dropdown links until they are needed*/
-.topnav li ul {
-    display: none;
-}
-/*Make dropdown links vertical*/
-.topnav li ul li {
     display: block;
     float: none;
-}
+    z-index: 1;
+} */
 /*Prevent text wrapping*/
-.topnav li ul li a {
+/* .topnav li ul li a {
     width: auto;
-    min-width: 100px;
+    min-width: 120px;
     padding: 0 20px;
-}
-/*Display the dropdown on hover*/
-.topnav ul li a:hover + .hidden, .hidden:hover {
-    display: block;
-}
+} */
 /*Style 'show menu' label button and hide it by default*/
 /* .show-menu {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
