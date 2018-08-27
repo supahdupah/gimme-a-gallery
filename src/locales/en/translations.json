@@ -6,10 +6,22 @@
         "name": "New File",
         "path": "/"
       }]
+    },
+    {
+      "name": "GALLERIES",
+      "path": "/galleries",
+      "subMenu": [{
+        "name": "New File",
+        "path": "/"
+      }]
     },{
       "name": "PAINTINGS",
       "path": "/paintings",
       "subMenu": [{
+        "name": "ILUSTRATIONS",
+        "path":"/paintings/sub"
+      },
+      {
         "name": "ILUSTRATIONS",
         "path":"/paintings/sub"
       }]

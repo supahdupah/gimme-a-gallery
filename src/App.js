@@ -9,7 +9,9 @@ import {
   Link
 } from 'react-router-dom'
 import MenuContainer from './js/components/container/MenuContainer';
+import NavigationBox from './js/components/container/NavigationBox';
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -37,8 +39,9 @@ class App extends Component {
                 </MenuContainer>
 
               <div class="container">
-                  <Route exact path="/" component={Paintings} />
+                  <Route exact path="/" component={Home} />
                   <Route path="/ilustrations" component={Ilustrations} />
+                  <Route path="/galleries" component={NavigationBox} />
                   <Route path="/paintings" component={Paintings} />
                   <Route path="/drawings" component={Drawings} />
                 </div>

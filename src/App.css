@@ -74,6 +74,84 @@
     z-index: -10;
     padding-top: 18px;
 }
+/* .article{
+    font-family: 'Karla', sans-serif !important;
+    width: 36em;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 18px;
+} */
+.home {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.gallery-navigation-container{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+.gallery-box{
+    padding: 5px;
+}
+.gallery-tease-image{
+    position: relative;
+    overflow: hidden;
+    margin: 0 0px;
+    display: block;
+}
+.gallery-tease-image::before{
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 66.66667%;
+}
+.nav-box-image{
+    /* display: block; */
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: transparent;
+    text-decoration: none;
+    background-image: url(http://www.aliciamarsans.com/webAMarsans/images/alicia1petit.jpg);
+    background-repeat: no-repeat;
+
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    will-change: transform;
+}
+.nav-box-image:hover{
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        transform: scale(1.02);
+}
+.h3-box {
+    background-color: #eeeeee;
+    text-align: center;
+    font-family: 'Karla', sans-serif !important;
+    font-size: 16pt;
+    font-weight: 100;
+}
+@media only screen and (max-width: 320px){
+    article{
+        font-size: 16px;
+    }
+}
 .topnav {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
@@ -86,22 +164,17 @@
     overflow: hidden;
     background-color: #ffffff;
 } 
-.topnav li {
+.topnav>ul>li {
     float: left;
     display: block;
     padding: 14px 16px;
-    /* min-width:100px;  */
     height: 50px;
-    /* text-align: justify; */
 }
-.topnav li ul li {
-    float: left;
+.topnav>ul>li>ul>li {
     display: block;
     padding: 16px 0px;
     min-width:100px;
     height: 50px;
-    /* text-justify: distribute; */
-    /* text-align: justify; */
 }
 .topnav ul li:hover ul {
     display: block; 
@@ -128,49 +201,11 @@
 }
 
 /*Hover state for top level links*/
-.topnav > ul > li:hover > a {
+.topnav ul li a:hover {
     border-bottom: #c1cef5 0.2pt groove;
     /* background: #edfbfc; */
 }
 
-/* iki cia */
-/*Hover state for dropdown links*/
-.topnav > ul > li > ul > li:hover a{
-    border-bottom: #c1cef5 0.2pt groove;
-}
-
-/*Make dropdown links vertical*/
-/* .topnav ul li ul li {
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    float: none;
-    z-index: 1;
-} */
-/*Prevent text wrapping*/
-/* .topnav li ul li a {
-    width: auto;
-    min-width: 120px;
-    padding: 0 20px;
-} */
-/*Style 'show menu' label button and hide it by default*/
-/* .show-menu {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background: #19c589;
-    text-align: center;
-    padding: 10px 0;
-    display: none;
-} */
-/*Hide checkbox*/
-/* input[type=checkbox]{
-    display: none;
-} */
-/*Show menu when invisible checkbox is checked*/
-/* input[type=checkbox]:checked ~ #menu{
-    display: block;
-} */
 /*Responsive Styles*/
 @media screen and (max-width : 760px){
     /*Make dropdown links appear inline*/

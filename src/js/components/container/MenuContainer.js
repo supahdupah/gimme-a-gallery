@@ -17,7 +17,6 @@ class MenuContainer extends Component {
                 </ul>
             </div>
         );
-
     }
 }
 export default MenuContainer;
