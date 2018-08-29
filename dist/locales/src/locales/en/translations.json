@@ -6,46 +6,58 @@
         "name": "New File",
         "path": "/"
       }]
+    },
+    {
+      "name": "GALLERIES",
+      "path": "/galleries",
+      "subMenu": [{
+        "name": "New File",
+        "path": "/"
+      }]
     },{
       "name": "PAINTINGS",
       "path": "/paintings",
       "subMenu": [{
-        "name": "PaintingsSub",
+        "name": "ILUSTRATIONS",
+        "path":"/paintings/sub"
+      },
+      {
+        "name": "ILUSTRATIONS",
         "path":"/paintings/sub"
       }]
     }, {
       "name": "DRAWINGS",
       "path": "/drawings",
       "subMenu": [{
-        "name": "PaintingsSub",
+        "name": "ILUSTRATIONS",
         "path":"/paintings/sub"
       }]
     }, {
       "name": "ILUSTRATIONS",
       "path": "/ilustrations",
       "subMenu": [{
-        "name": "PaintingsSub",
+        "name": "ILUSTRATIONS",
         "path":"/paintings/sub"
       }]
     }, {
       "name": "SCULPTURES",
       "path": "/paintings",
       "subMenu": [{
-        "name": "PaintingsSub",
+        "name": "ILUSTRATIONS",
         "path":"/paintings/sub"
       }]
     }, {
       "name": "TOYS",
       "path": "/paintings",
       "subMenu": [{
-        "name": "PaintingsSub",
+        "name": "ILUSTRATIONS",
         "path":"/paintings/sub"
       }]
     }, {
       "name": "CATALOGS",
       "path": "/paintings",
       "subMenu": [{
-        "name": "PaintingsSub",
+        "name": "ILUSTRATIONS",
         "path":"/paintings/sub"
       }]
     }]

@@ -22,11 +22,8 @@ class Item extends Component {
   }
 
   render() {
-    //const componentStyle = { ...style };
     let submenu;
     if (this.state.over) {
-      //componentStyle.background = '#007eff';
-      //componentStyle.color = '#fff';
       submenu = <Submenu ref="submenu" singleMenuData={this.props.singleMenuData}/>;
     }
 
