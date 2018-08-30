@@ -1,7 +1,16 @@
 * {
     box-sizing: border-box;
-    /* font-family: 'Karla', sans-serif !important; */
 }
+
+body {
+    font-family: 'Karla', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .header {
     background-color: #ffffff;
     text-align: left;
@@ -20,48 +29,18 @@
     color: white;
     text-align: center;
 }
-.lang-switcher {
-    background-color: #ffffff;
-    color: #000000;
-    float: right !important;
-}
-.lang-switcher .lang{
-    font-size: 14pt;
-    cursor: pointer;
-    display: inline;
-}
-.socialmedia{
-    padding-left: 25px;
-    font-size: 16pt;
-    float: right !important;
-}
-.socialmedia a{
-    display: inline;
-}
-.divider{
-    margin-left: 2px;
-    margin-right: 2px;
-    border-left: 1px solid rgb(44, 44, 44);
-    display: inline;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
 [class*="col-"] {
     float: left;
-    padding: 15px; 
+    padding-left: 15px;
+    padding-right: 15px;
     border: 0.5px solid rgb(202, 221, 243);
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0;
 }
 
 .row::after {
@@ -70,17 +49,106 @@
     display: table;
 }
 
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.gallery-navigation-container {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.gallery-tease-box {
+    width: calc(25% - 30px) !important;
+    margin: 0 0 49px;
+    padding: 0;
+}
+
+.gallery-tease-image {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    display: block;
+}
+
+.gallery-tease-box:not(:first-child):not(:last-child) {}
+
+.gallery-tease-box:nth-of-type(n)>.row {
+    margin: 0;
+}
+
+.gallery-tease-box:nth-child(2) {
+    margin: 0 15px 49px;
+}
+
+.gallery-tease-box:nth-child(3) {
+    margin: 0 15px 49px 0px;
+}
+
+.gallery-tease-image::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 66.66667%;
+}
+
+.gallery-tease-details {
+    margin: 0px;
+    padding-top: 0;
+    position: relative;
+}
+
+.gallery-tease-details-categories {
+    text-align: center;
+}
+
+.gallery-tease-details-categories h5 {
+    position: static;
+    width: 100%;
+    min-height: 1em;
+    color: #EE3440;
+    line-height: 12px;
+    text-align: center;
+}
+.gallery-tease-details-categories a {
+    display: inline-block;
+    font-size: 20px;
+    font-stretch: semi-expanded;
+    width: 100%;
+    color: rgb(94, 94, 94);
+}
+.gallery-tease-details-title a {
+    display: inline;
+    line-height: 28px;
+}
+.gallery-tease-details-title {
+    margin: 40px auto;
+    width: 90%;
+}
+
+.gallery-tease-details-title h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    white-space: normal;    
+    display: inline-block;
+    font-size: 16px;
+    font-stretch: semi-expanded;
+    line-height: 28px;
+    width: 100%;
+    color: rgb(94, 94, 94);
+}
+
+.gallery-tease-details-footer {}
+
 .image-container {
     z-index: -10;
     padding-top: 18px;
 }
-/* .article{
-    font-family: 'Karla', sans-serif !important;
-    width: 36em;
-    margin: 0 auto;
-    line-height: 1.5;
-    font-size: 18px;
-} */
+
 .home {
     margin: auto;
     width: 50%;
@@ -88,27 +156,7 @@
     padding: 10px;
 }
 
-.gallery-navigation-container{
-    margin: auto;
-    width: 100%;
-    padding: 10px;
-}
-.gallery-box{
-    padding: 5px;
-}
-.gallery-tease-image{
-    position: relative;
-    overflow: hidden;
-    margin: 0 0px;
-    display: block;
-}
-.gallery-tease-image::before{
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: 66.66667%;
-}
-.nav-box-image{
+.nav-box-image {
     /* display: block; */
     background-size: cover;
     top: 0;
@@ -120,7 +168,6 @@
     text-decoration: none;
     background-image: url(http://www.aliciamarsans.com/webAMarsans/images/DIBUJOS/01.jpg);
     background-repeat: no-repeat;
-
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
@@ -133,13 +180,15 @@
     transform: scale(1);
     will-change: transform;
 }
-.nav-box-image:hover{
-        -webkit-transform: scale(1.02);
-        -moz-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-        -o-transform: scale(1.02);
-        transform: scale(1.02);
+
+.nav-box-image:hover {
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
 }
+
 .h3-box {
     background-color: #eeeeee;
     text-align: center;
@@ -147,39 +196,46 @@
     font-size: 16pt;
     font-weight: 100;
 }
-@media only screen and (max-width: 320px){
-    article{
+
+@media only screen and (max-width: 320px) {
+    article {
         font-size: 16px;
     }
 }
+
 .topnav {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    font-family: 'Karla', sans-serif; 
+    font-family: 'Karla', sans-serif;
 }
+
 .topnav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #ffffff;
-} 
+}
+
 .topnav>ul>li {
     float: left;
     display: block;
     padding: 14px 16px;
     height: 50px;
 }
+
 .topnav>ul>li>ul>li {
     display: block;
     padding: 16px 0px;
-    min-width:100px;
+    min-width: 100px;
     height: 50px;
 }
+
 .topnav ul li:hover ul {
-    display: block; 
+    display: block;
     position: absolute;
 }
+
 .topnav ul ul {
     display: none;
 }
@@ -191,6 +247,7 @@
     font-size: 13px;
     display: inline-block;
 }
+
 /*Style for dropdown links*/
 .topnav ul li ul li a {
     background: #ffffff;
@@ -206,8 +263,85 @@
     /* background: #edfbfc; */
 }
 
+.lang-switcher {
+    background-color: #ffffff;
+    color: #000000;
+    float: right !important;
+}
+
+.lang-switcher .lang {
+    font-size: 14pt;
+    cursor: pointer;
+    display: inline;
+}
+
+.socialmedia {
+    padding-left: 25px;
+    font-size: 16pt;
+    float: right !important;
+}
+
+.socialmedia a {
+    display: inline;
+}
+
+.divider {
+    margin-left: 2px;
+    margin-right: 2px;
+    border-left: 1px solid rgb(44, 44, 44);
+    display: inline;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
 /*Responsive Styles*/
-@media screen and (max-width : 760px){
+@media screen and (max-width : 760px) {
     /*Make dropdown links appear inline*/
     /* ul {
         position: static;

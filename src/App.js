@@ -6,10 +6,9 @@ import Paintings from './js/Gallery/Paintings';
 import Home from './js/Gallery/Home';
 import {
   Route,
-  Link
 } from 'react-router-dom'
 import MenuContainer from './js/components/container/MenuContainer';
-import NavigationBox from './js/components/container/NavigationBox';
+import GalleryTeaseContainer from './js/components/container/GalleryTeaseContainer';
 import './App.css';
 
 
@@ -24,7 +23,7 @@ class App extends Component {
                 ALICIA MARSANS
                 <div className="socialmedia">
                   <a href="https://www.instagram.com/alicia_marsans/"><i class="fab fa-instagram"></i></a>
-                  <a href=""><i class="fab fa-facebook"></i></a>           
+                  <a href=""><i class="fab fa-facebook"></i></a>
                 </div>
                 <div className="lang-switcher">
                   <div className="lang" onClick={() => i18n.changeLanguage('es')}>ES</div>
@@ -35,16 +34,16 @@ class App extends Component {
                 </div>
               </div>
 
-                <MenuContainer menuData={t('menuData', { returnObjects: true })}>
-                </MenuContainer>
+              <MenuContainer menuData={t('menuData', { returnObjects: true })}>
+              </MenuContainer>
 
               <div class="container">
-                  <Route exact path="/" component={Home} />
-                  <Route path="/ilustrations" component={Ilustrations} />
-                  <Route path="/galleries" component={NavigationBox} />
-                  <Route path="/paintings" component={Paintings} />
-                  <Route path="/drawings" component={Drawings} />
-                </div>
+                <Route exact path="/" component={Home} />
+                <Route path="/ilustrations" component={Ilustrations} />
+                <Route path="/galleries" component={GalleryTeaseContainer} />
+                <Route path="/paintings" component={Paintings} />
+                <Route path="/drawings" component={Drawings} />
+              </div>
               <footer class="footer">
 
               </footer>

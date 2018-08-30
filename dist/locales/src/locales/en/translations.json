@@ -60,5 +60,24 @@
         "name": "ILUSTRATIONS",
         "path":"/paintings/sub"
       }]
-    }]
+    }],
+    "galleryTeaseData": [{
+      "categoryTitle" : "ILUSTRATIONS",
+      "path" : "/ilustrations",
+      "imgUrl": "http://www.aliciamarsans.com/webAMarsans/images/transfertjuin/ilustracionesdessinsoriginal/2.jpg",
+      "titleText" : "loaded from translations a lot of title text everywhere there and there somewhere around the globe where"
+    },
+    {
+      "categoryTitle" : "PAINTINGS",
+      "path" :"/paintings",
+      "imgUrl": "http://www.aliciamarsans.com/webAMarsans/images/transfertjuin/ilustracionesdessinsoriginal/2.jpg",
+      "titleText" : "loaded from translations a lot of title text everywhere there and there somewhere around the globe where"
+    },
+    {
+      "categoryTitle" : "DRAWINGS",
+      "path" :"/drawings",
+      "imgUrl": "http://www.aliciamarsans.com/webAMarsans/images/transfertjuin/ilustracionesdessinsoriginal/2.jpg",
+      "titleText" : "loaded from translations a lot of title text everywhere there and there somewhere around the globe where"
+    }
+    ]
 }

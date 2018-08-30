@@ -1,19 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { target } from 'react-aim';
 import SubMenuItem from '../presentational/SubMenuItem'
-
-const style = {
-  position: 'absolute',
-  top: '0px',
-  left: '100%',
-  background: '#eee',
-  margin: '0px',
-  padding: '0px',
-  listStyle: 'none',
-  border: '1px solid #bbb',
-  boxShadow: '0 2px 8px 0 rgba(0, 0, 0, .2)'
-};
-
 @target(
   {
     aimStart: (props, component) => {

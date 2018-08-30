@@ -1,7 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import Item from './Item';
-//import './styles.css';
-import MenuItem from '../presentational/MenuItem';
 
 class MenuContainer extends Component {
     render() {

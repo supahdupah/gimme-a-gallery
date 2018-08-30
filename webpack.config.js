@@ -19,26 +19,31 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: ['style-loader', 'css-loader']
       },
       {
         type: 'javascript/auto',
         test: /\.json$/,
         use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[path][name].[ext]',
-                outputPath: 'locales/'
-              }
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              outputPath: 'locales/'
             }
+          }
         ]
-       },
-    
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      }
     ]
   },
   devServer: {
-         contentBase: './dist'
+    contentBase: './dist'
   },
   plugins: [
     new HtmlWebPackPlugin({
